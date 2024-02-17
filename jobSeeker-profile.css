@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.about-div{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    /* height: 300px; */
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px -10px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.about-div .prof-det{
+    display: grid;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.prof-det .prof-edit{
+    padding: 5px;
+    justify-self: right;
+    color: #0e47a1;
+    width: fit-content;
+    border-radius: 5px;
+}
+.prof-det .prof-edit:hover{
+    background-color: #448cff73;
+}
+
+
+.prof-det .prof-img{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #0e47a1;
+    margin: 15px;
+}
+.prof-det .user-name{
+    font-weight: 500;
+    font-size: 20px;
+    color: #0e47a1;
+}
+.prof-det .user-id{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.about-div .lineOne{
+    width: 1px;
+    background-color: #acacac;
+    margin: 20px;
+}
+
+.about-div .about-det{
+    width: 100%;
+}
+.about-det .about{
+    font-weight: 500;
+    margin: 16px;
+    color: #0e47a1;
+    font-size: 20px;
+}
+.about-det .details {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 16px;
+    gap: 20px 80px;
+    width: fit-content;
+}
+
+.details .name{
+    color: #0e47a1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.details .connect .cont{
+    display: flex;
+    justify-content: space-between;
+}
+.details .connect a{
+
+    text-decoration: none;
+    color: #0e47a1;
+    font-size: 20px;
+    
+    border-radius: 5px;
+    padding: 8px;
+}
+.details .connect a:hover{
+    background-color: #448cff73;
+}
+
+.about-div .lineTwo{
+    width: 95%;
+    background-color: #acacac;
+    margin: 20px auto;
+    height: 1px;
+}
+
+.summary-div{
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    /* height: 300px; */
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px -10px;
+    border-radius: 15px;
+    padding: 8px;
+}
+.summary-div .summary{
+    font-weight: 500;
+    color: #0e47a1;
+    font-size: 20px;
+    margin: 20px;
+}
+.summary-div .sum-para{
+    margin: 20px;
+}
+
+
+.attachsEdu-div{
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px -10px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.attachsEdu-div .resumes-div{
+    padding: 20px;
+}
+
+.resumes-div .resume{
+    font-weight: 500;
+    color: #0e47a1;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumes-div .attachs {
+    margin: 10px 0;
+}
+
+.resumes-div .attachs button{
+    border: 2px solid #d70000;
+    background-color: #ffe0e0;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-right: 15px;
+    color: #d70000;
+    font-weight: 600;
+    transition: .5s;
+}
+.resumes-div .attachs button:hover{
+    background-color: #d70000;
+    color: #fff;
+}
+
+.attachsEdu-div .lineTwo{
+    width: 95%;
+    background-color: #acacac;
+    margin: 0 auto;
+    height: 1px;
+}
+
+.attachsEdu-div .education-div{
+    padding: 20px;
+}
+.education-div .edu{
+    font-weight: 500;
+    color: #0e47a1;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.education-div ul{
+    margin: 10px 20px;
+}
+.education-div li{
+    font-weight: 500;
+    /* list-style: none; */
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+    .about-div{
+        display: block;
+    }
+    .about-div, .attachsEdu-div, .summary-div {
+        width: 80%;
+    }
+    .about-div .prof-det {
+        margin: 0 auto;
+    }
+
+    .about-det .about {
+       font-size: 24px;
+    }
+
+    .about-det .details {
+        gap: 20px 40px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 767px) {
+    
+    .about-div{
+        display: block;
+    
+    }
+    .about-div, .attachsEdu-div, .summary-div {
+        width: 90%;
+    }
+
+    .about-div .prof-det {
+        margin: 0 auto;
+    }
+
+    .about-det .about {
+       font-size: 24px;
+    }
+
+    .about-det .details {
+        gap: 20px 36px;
+        grid-template-columns: repeat(2, auto);
+    }
+
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .about-det .details {
+        grid-template-columns: repeat(1, auto);
+    }
+}

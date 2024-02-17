@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.about-div{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    /* height: 300px; */
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px -10px;
+    border-radius: 15px;
+    padding: 8px;
+}
+.about-div .prof-edit{
+    padding: 5px;
+    float: right;
+    color: #0e47a1;
+    height: fit-content;
+    border-radius: 5px;
+    transition: .5s;
+}
+.about-div .prof-edit:hover{
+    background-color: #448cff73;
+}
+
+.about-div .empProf{
+    padding: 20px;
+    /* width: fit-content; */
+}
+.empProf .empProf-img{
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #0e47a1;
+    margin: 15px;
+}
+
+
+/* ============= */
+.about-div .about-det{
+    width: 100%;
+}
+.about-det .empName{
+    font-weight: 500;
+    margin: 16px;
+    color: #0e47a1;
+    font-size: 26px;
+}
+.about-det .details {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 16px;
+    gap: 20px 80px;
+    width: fit-content;
+}
+
+.details .name{
+    color: #0e47a1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.details .connect .cont{
+    display: flex;
+    justify-content: space-between;
+}
+.details .connect a{
+
+    text-decoration: none;
+    color: #0e47a1;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 8px;
+    transition: .5s;
+}
+.details .connect a:hover{
+    background-color: #448cff73;
+}
+
+/* ======== */
+
+.infos-div{
+    
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    /* height: 300px; */
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px -10px;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.infos-div .info{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.info .name{
+    color: #0e47a1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+.infos-div .jobdtls{
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.jobdtls .name{
+    color: #0e47a1;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .about-div, .infos-div{
+        width: 80%;
+    }
+
+    .about-div{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .about-div .empProf{
+        margin: 0 auto;
+        padding: 0 20px;
+        /* text-align: center; */
+    }
+
+    .about-det .empName {
+        text-align: center;
+        margin: 0 16px 16px 16px;
+    }
+
+    .about-div .prof-edit{
+        float: unset;
+        width: fit-content;
+        margin-top: -35px;
+        
+    }
+
+    /* .about-det .details{
+        margin: 16px 16px 0 16px;
+    } */
+}
+
+/* Mobile Phones */
+@media (max-width: 767px) {
+
+    .about-div, .infos-div{
+        width: 90%;
+    }
+
+    .about-div{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .about-div .empProf{
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .about-det .empName {
+        text-align: center;
+        margin: 0 16px 16px 16px;
+    }
+
+    .about-div .prof-edit{
+        float: unset;
+        width: fit-content;
+        margin-top: -35px;
+        
+    }
+
+    .about-det .details {
+        grid-template-columns: repeat(2, auto);
+        gap: 20px 30px;
+    }
+
+    .infos-div .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .about-det .details {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .infos-div .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .infos-div .jobdtls {
+        flex-direction: column;
+    }
+}
+
+
+
