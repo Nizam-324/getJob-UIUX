@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    display: grid;
+    /* background-image: url(homeBg.svg); */
+}
+
+.homeBg {
+    height: 70vh; 
+    background-image: url('homeBg.svg');
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-position: right center;
+    margin-top: 50px;
+}
+
+.homeBg .quote{
+    font-size: 70px;
+    margin-left: 85px;
+    width: fit-content;
+    display: grid;
+    justify-items: end;
+    font-weight: 600;
+    color: #003181;
+    letter-spacing: -4px;
+}
+
+.homeBg .quote .tline{
+    margin-top: -20px;
+    margin-right: -200px;
+}
+.homeBg .quote .name{
+    color: #003da2;
+}
+.homeBg .quote .name .nstyle{
+    font-family: 'Montserrat';
+    /* color: #00c8c8; */
+    font-weight: 700;
+    margin-left: 8px;
+    color: #cc1919;   
+}
+
+.jobSearch .search{
+    width: 40%;
+    height: 50px;
+    background-color: #ffffff;
+    color: #003181;
+    margin: 50px auto;
+    border-radius: 36px;
+    box-shadow: #828282 0px 0px 18px -6px;
+    /* box-shadow: #555555 0px 0px 30px -20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.search input{
+    width: 80%;
+    border: none;
+}
+.search input:focus{ outline: none; }
+.search button.sbtn{
+    background-color: #003181;
+    border: 2px solid #003181;
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 36px;
+    transition: .3s;
+    margin-left: 15px;
+}
+.search button.sbtn:hover{
+    background-color: #86beff;
+    color: #003181;
+
+}
+
+.industries-div{
+    display: flex;
+    gap: 10px;
+    margin: -50px auto;
+    flex-wrap: wrap;
+    width: 68%;
+    justify-content: center;
+
+    
+}
+.industries-div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 120px; */
+    min-width: 75px;
+    max-width: 125px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* This truncates the text with an ellipsis (...) */
+    white-space: nowrap; /* This ensures the text does not wrap */
+    background-color: #ffffff;
+    color: #0e0e0e;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 15px;
+    font-weight: 600;
+    border: 2px #676767 solid;
+    border-radius: 10px;
+    transition: .3s;
+}
+.industries-div a:hover{
+    background-color: #8b8b8b1f;
+    transform: translateY(-2px);
+}
+
+
+.industries-div a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+
+.industries-div a i {
+    color: #1e1e1e;
+}
+
+
+.featured-jobs{
+    margin: 100px auto 50px auto;
+    width: 100%;
+    padding: 25px 0;
+    display: grid;
+}
+
+.featured-jobs .jobs{
+    margin: 25px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 10px;
+    /* background-color: rgb(111, 143, 172); */
+}
+
+.featured-jobs h2{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.jobs .job{
+    padding: 20px;
+    box-shadow: 0 7px 18px #404f680d;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.job img{
+    width: 60px;
+    border-radius: 8px;
+}
+.job .details .job-name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #003181;
+}
+
+.job .details .dtls{
+    font-size: 16px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 12px;
+}
+
+.job .details .dtls .saveBtn{padding: 3px; border-radius: 3px; color: #003181;}
+.job .details .dtls .saveBtn:hover{
+    background-color: #a7c9ff; 
+    /* padding: 5px;    */
+}
+.job .details .dtls:first-child{ justify-content: space-between; }
+.job .details .dtls p {display: flex; }
+.job .details .dtls span{ margin-right: 5px; }
+
+.job .details .jType, .job .details .jCat{
+    font-size: 14px;
+    background-color: #a7c9ff;
+    padding: 1px 15px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: #003181;
+}
+
+.featured-jobs button{
+    background-color: #003181;
+    padding: 12px 20px;
+    margin: 0 auto;
+    width: fit-content;
+    border: #003181 1px solid;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+.featured-jobs button:hover{
+    background-color: #003da2;
+}
+
+
+.seeker-ad{
+    height: fit-content;
+    width: 100%;
+    background-color: #03A9F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.seeker-ad h1{
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
+}
+.seeker-ad span{ display: flex; align-items: center;}
+.seeker-ad button{
+    background-color: #ffffff;
+    padding: 15px 30px;
+    width: fit-content;
+    border: #003181 2px solid;
+    color: #003181;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 36px;
+    transition: .4s;
+}
+.seeker-ad button:hover{
+    background-color: #003181;
+    color: #fff;
+    border: 2px #fff solid;
+}
+
+.seeker-ad img{
+    width: 340px;
+}
+
+
+
+.top-companies{
+    display: grid;
+    margin: 50px auto;
+    
+}
+
+.top-companies h2{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.top-companies .companies{
+    display: flex;
+    margin: 25px auto;
+    gap: 10px;
+}
+
+.top-companies .companies .company{
+    padding: 15px 20px;
+    background-color: #fff;
+    border: #1e1e1e 1px solid;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap; /* This ensures the text does not wrap */
+}
+
+.companies .company img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.companies .company .cName{
+    font-weight: 500;
+    font-size: 18px;
+    color: #003181;
+} 
+
+.top-companies button{
+    background-color: #003181;
+    padding: 12px 20px;
+    margin: 0 auto;
+    width: fit-content;
+    border: #003181 1px solid;
+    color: #fff;
+    border-radius: 5px;
+    transition: .3s;
+}
+.top-companies button:hover{
+    background-color: #003da2;
+}
+
+
+.employer-ad{
+    height: fit-content;
+    width: 80%;
+    margin: 50px auto 75px auto;
+    background-color: #03A9F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.employer-ad h1{
+    font-weight: 400;
+    font-size: 40px;
+    color: #003181;
+    color: #fff;
+}
+
+.employer-ad button{
+    background-color: #ffffff;
+    padding: 15px 30px;
+    margin: 20px 0;
+    width: fit-content;
+    border: #0070a3 2px solid;
+    color: #0070a3;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 36px;
+    transition: .4s;
+}
+.employer-ad button:hover{
+    background-color: #0277BD;
+    color: #fff;
+    border: 2px #fff solid;
+}
+
+.employer-ad img{
+    width: 400px;
+}
+
+
+footer{
+    height: 40vh;
+    /* background-color: #03A9F4; */
+    display: grid;
+    place-items: center;
+    border-top: #003181 2px solid;
+}
+
+footer h1{
+    font-size: 110px;
+    color: #003181;
+    font-weight: 600;
+}
+footer h1 span{
+    margin-left: 8px;
+    font-family: 'Montserrat';
+    color: #cc1919;
+}
+
+footer .names{ color: #003181; font-weight: 600; }
+footer .names span{
+    color: #cc1919;
+}
+
+
+/* Tablet */
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .homeBg {
+        height: 100vh;
+        background-image: url(homeBg-rsp.jpg);
+        background-position: center;
+        background-size: 86%;
+        margin-top: 0;
+    }  
+    
+    .homeBg .quote{
+        font-size: 55px;
+        /* display: flex; */
+        margin: 25px auto;
+        letter-spacing: -2px;
+        justify-items: center;
+    }
+    .homeBg .quote .tline{
+        margin-top: -14px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+
+    .jobSearch .search{
+        width: 75%;
+        height: 60px;
+        margin: 275px auto;
+        font-size: 18px;
+    }
+    
+    .search input{
+        font-size: smaller;
+        margin-left: 10px;
+    }
+    .search button.sbtn{
+        padding: 8px 26px;
+    }
+    
+    
+
+
+    .industries-div{
+        margin: -50px auto;
+        width: 100%;
+        
+    }
+
+    .featured-jobs .jobs{
+        grid-template-columns: repeat(2, auto);
+        /* gap: 18px; */
+    }
+    .job .details .dtls {
+        gap: 10px;
+    }
+
+    .seeker-ad{
+        justify-content: center;
+    }
+    .seeker-ad h1{ font-size: 34px; }
+    .seeker-ad span { display: grid; justify-items: end;}
+    .seeker-ad button{ padding: 12px 26px; }
+
+    .top-companies .companies .company{
+        display: block;
+    
+    }
+
+
+    .employer-ad{ width: 90%; }
+    .employer-ad img {
+        width: 360px;
+    }
+}
+
+
+
+/* Mobile Phones */
+@media (max-width: 767px) {
+
+    .homeBg {
+
+        height: 100vh;
+
+        background-image: url(homeBg-rsp.jpg);
+
+        background-position: top center;
+        background-size: 200%;
+        /* margin-top: 0; */
+    }  
+    
+    .homeBg .quote{
+        font-size: 55px;
+        /* display: flex; */
+        margin: -25px auto;
+        letter-spacing: -2px;
+        justify-items: center;
+    }
+    .homeBg .quote .tline{
+        margin-top: -14px;
+        margin-right: 0;
+        margin-left: 10px;
+    }
+
+
+    .jobSearch .search{
+        width: 90%;
+        height: 60px;
+        margin: 275px auto;
+        font-size: 18px;
+    }
+    
+    .search input{
+        font-size: smaller;
+        margin-left: 10px;
+    }
+    .search button.sbtn{
+        padding: 8px 26px;
+    }
+
+    .industries-div{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .industries-div a{ padding: 0 10px; }
+
+    .featured-jobs .jobs{
+        grid-template-columns: none;
+        /* gap: 18px; */
+    }
+    .job .details .dtls {
+        gap: 10px;
+    }
+
+    .seeker-ad{
+        padding-top: 25px;
+        display: grid;
+        justify-content: center;
+    }
+    .seeker-ad h1{ font-size: 34px; }
+    .seeker-ad span { 
+        display: grid; 
+        justify-items: center;
+    }
+    .seeker-ad button{ padding: 12px 26px; }
+    
+    
+    .top-companies .companies{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+
+    .employer-ad{ 
+        width: 96%; 
+        display: grid;
+        
+    }
+    .employer-ad span{
+        text-align: center;
+    }
+    .employer-ad img {
+        width: 360px;
+    }
+
+}
+
+/* Small Mobiles */
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .homeBg { height: unset; }
+
+    .homeBg .quote{ font-size: 48px; }
+
+}
