@@ -14,7 +14,7 @@
         }
         
         body{
-            /* overflow: hidden; */
+            overflow: hidden;
             /* background-color: #000; */
             font-family: 'Poppins';
             display: grid;
@@ -25,12 +25,12 @@
         }
         h1{
             font-family: 'Montserrat';
-            color: #0e47a1;
+            color: rgb(14, 71, 161);
             margin-bottom: 50px;
-            font-size: 50px;
+            font-size: 100px;
         }
         h1 span{
-            color: #cc1919;
+            color: rgb(204, 25, 25);
             margin-left: 6px;
 
         }
@@ -68,7 +68,7 @@
             text-align: center;
         }
         .names span{
-            color: #cc1919;
+            color: rgb(204, 25, 25);
         }
 
 
@@ -80,33 +80,72 @@
         }
 
 
-        .ripple {
+        .rippleOne {
+            /* display: none; */
             z-index: -5;
             position: absolute;
-  margin: auto;
-  margin-top: 10rem;
-  background-color: #fff;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  animation: ripple 2s linear infinite;
-}
-@keyframes ripple {
-  0% {
-    box-shadow: 0 0 0 1.4rem rgba(17, 0, 255, 0.2),
-                0 0 0 3rem rgba(17, 0, 255, 0.2),
-                0 0 0 10rem rgba(17, 0, 255, 0.2),
-                0 0 0 20rem rgba(17, 0, 255, 0.2),
-                0 0 0 40rem rgba(17, 0, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 3rem rgba(255,0,0, 0.2),
-                0 0 0 8rem rgba(255,0,0, 0.2),
-                0 0 0 16rem rgba(255,0,0, 0.2),
-                0 0 0 32rem rgba(255, 0, 0, 0.2),
-                0 0 0 64rem rgba(255, 0, 0, 0.2);
-  }
-}
+            top: -15px;
+            left: -15px;
+            margin: auto;
+            background-color: #fff;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            animation: rippleR 3s linear infinite;
+        }
+
+        .rippleTwo {
+            /* display: none; */
+            z-index: -5;
+            position: absolute;
+            bottom: -15px;
+            right: -15px;
+            margin: auto;
+            background-color: #fff;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            animation: rippleB 3s linear infinite;
+        }
+
+        @keyframes rippleR {
+            0% {
+                    box-shadow: 0 0 0 1.4rem rgba(204, 25, 25, 0.5),
+                                0 0 0 3rem rgba(204, 25, 25, 0.5),
+                                0 0 0 10rem rgba(204, 25, 25, 0.5),
+                                0 0 0 20rem rgba(204, 25, 25, 0.5);
+                                /* , 0 0 0 40rem rgba(17, 0, 255, 0.2); */
+                }
+
+            100% {
+                    box-shadow: 0 0 0 3rem rgba(204, 25, 25, 0.5),
+                                0 0 0 8rem rgba(204, 25, 25, 0.5),
+                                0 0 0 16rem rgba(204, 25, 25, 0.5),
+                                0 0 0 32rem rgba(204, 25, 25, 0.5);
+                                /* , 0 0 0 64rem rgba(17, 0, 255, 0.2); */
+                }
+
+        }
+
+
+        @keyframes rippleB {
+            0% {
+                    box-shadow: 0 0 0 1.4rem rgba(14, 71, 161, 0.5),
+                                0 0 0 3rem rgba(14, 71, 161, 0.5),
+                                0 0 0 10rem rgba(14, 71, 161, 0.5),
+                                0 0 0 20rem rgba(14, 71, 161, 0.5);
+                                /* , 0 0 0 40rem rgba(17, 0, 255, 0.2); */
+                }
+
+            100% {
+                    box-shadow: 0 0 0 3rem rgba(14, 71, 161, 0.5),
+                                0 0 0 8rem rgba(14, 71, 161, 0.5),
+                                0 0 0 16rem rgba(14, 71, 161, 0.5),
+                                0 0 0 32rem rgba(14, 71, 161, 0.5);
+                                /* , 0 0 0 64rem rgba(17, 0, 255, 0.2); */
+                }
+
+        }
 
 
     </style>
@@ -128,8 +167,8 @@
     </div>
 
     
-        <div class="ripple" style="animation-delay: 0s"></div>
-    
+        <div class="rippleOne" style="animation-delay: 0s"></div>
+        <div class="rippleTwo" style="animation-delay: 0s"></div>    
 
 </body>
 </html>
