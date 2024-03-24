@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="faq.css">
+    <title>FAQ</title>
+</head>
+<body>
+    <div class="head">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div class="content">
+
+        <p class="question">How do I create an account? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">To create an account, simply click on the "Sign Up" button on the homepage and follow the prompts to provide your necessary information. Once completed, you'll have access to our job portal services.</p>
+
+        <p class="question">I forgot my password. What should I do? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">If you've forgotten your password, you can click on the "Forgot Password" link on the login page. Follow the instructions to reset your password via email.</p>
+
+        <p class="question">How can I update my profile? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">To update your profile, log in to your account and navigate to the "Profile" section. Here, you can edit and update your personal information, skills, experience, and any other relevant details.</p>
+
+        <p class="question">How do I search for jobs? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">You can search for jobs by using the search bar on the homepage. Enter keywords, location, or specific job titles to find relevant listings. Additionally, you can browse through job categories or use advanced filters for a more refined search.</p>
+
+        <p class="question">What should I do if I encounter technical issues? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">If you encounter any technical issues while using our job portal, please contact our support team at [support email] or through the "Contact Us" page. Be sure to provide detailed information about the problem you're experiencing for prompt assistance.</p>
+
+        <p class="question">How do I apply for a job? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">Once you find a job listing that interests you, click on the "Apply Now" button and follow the instructions to submit your application. Some employers may require additional documents or information, so be sure to review the job posting carefully.</p>
+
+        <p class="question">Can I save job listings for later? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">Yes, you can save job listings by clicking on the "Save" or "Bookmark" button next to the job posting. This allows you to easily access and review saved listings at a later time.</p>
+
+        <p class="question">Is there a fee for using the job portal? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">No, our job portal is free for job seekers. There are no hidden fees for creating an account, searching for jobs, or applying to job listings.</p>
+
+        <p class="question">How can I get notified about new job opportunities? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">You can opt-in to receive email notifications for new job opportunities that match your preferences. Simply adjust your notification settings in the "Account Settings" section to receive updates.</p>
+
+        <p class="question">How can I delete my account? <i class="material-symbols-outlined add">add</i></p>
+        <p class="answer">If you wish to delete your account, please contact our support team with your request. We will assist you in permanently deleting your account and associated data from our system.</p>
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const addIcons = document.querySelectorAll('.add');
+    
+            addIcons.forEach(icon => {
+                icon.addEventListener('click', function () {
+                    const answer = this.parentNode.nextElementSibling;
+                    answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
