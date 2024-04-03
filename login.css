@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.bg-img{
+    display: grid;
+    height: 100%;
+    align-items: end;
+}
+
+.login-form{
+    background-color: #fff;
+    padding: 30px 40px;
+    width: 20%;
+    box-shadow: 0 0 40px -20px #1fb0dc50;
+    border-radius: 12px;
+}
+
+.login-form h3{
+    font-weight: 500;
+    /* text-align: center; */
+    font-size: 26px;
+    color: #1fb0dc;
+    margin-bottom: 20px;
+}
+
+.login-form form{
+    display: grid;
+}
+
+.login-form form label{
+    margin-left: 10px;
+    color: #003181;
+}
+
+.login-form form a{
+    text-align: right;
+    font-size: 13px;
+    margin: -15px 10px 20px 0;
+    color: #003181;
+    text-decoration: none;
+}
+
+.login-form form input{
+    border: 2px #003181 solid;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border-radius: 36px;
+}
+
+.login-form form button{
+    background-color: #1fb0dc;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 36px;
+    margin-bottom: 20px;
+}
+
+.login-form p{
+    font-size: 13px;
+    color: #565656;
+    text-align: center;
+}
+.login-form button.reg{
+    background-color: #003181;
+    border: none;
+    padding: 5px;
+    color: #fff;
+    border-radius: 36px;
+    width: 80%;
+    margin: 10px 24px;
+}
+
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body{
+        flex-direction: column-reverse;
+    }
+
+    .bg-img{
+        display: unset;
+        height: fit-content;
+        text-align: center;
+    }
+    .bg-img img{
+        width: 80%;        
+    }
+
+    .login-form{
+        width: 55%;
+    }
+    .login-form h3{
+        margin-left: 5%;
+    }
+    .login-form form{
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+
+    body{
+        flex-direction: column-reverse;
+    }
+
+    .bg-img{
+        display: unset;
+        height: fit-content;
+        text-align: center;
+    }
+    .bg-img img{
+        width: 100%;        
+    }
+
+    .login-form{
+        width: 80%;
+        box-shadow: 0 0 0 0;
+    }
+    .login-form form{
+        width: 100%;
+        margin: auto;
+    }
+
+}

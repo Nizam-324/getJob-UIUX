@@ -216,6 +216,9 @@ footer .links a{
         padding: 10px 0 50px 0;
         flex-wrap: wrap;
     }
+    .members .member:nth-child(-n+2){
+        margin: 0 5%;
+    }
 
 }
 
@@ -240,7 +243,7 @@ footer .links a{
         flex-wrap: wrap;
     }
     .members .member:first-child{
-        margin: 0 34px;
+        margin: 0 100%;
     }
 
 
@@ -285,10 +288,10 @@ footer .links a{
     .grp-members .members{
         padding: 10px 0 50px 0;
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 18px;
     }
     .members .member:first-child{
-        margin: 0 34px;
+        margin: 0 100%;
     }
 
 }
