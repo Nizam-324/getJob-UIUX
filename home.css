@@ -7,6 +7,7 @@
 body{
     display: grid;
     /* background-image: url(homeBg.svg); */
+    overflow-x: hidden;
 }
 
 .homeBg {
@@ -40,7 +41,7 @@ body{
     /* color: #00c8c8; */
     font-weight: 700;
     margin-left: 8px;
-    color: #cc1919;   
+    color: #1fb0dc;   
 }
 
 .jobSearch .search{
@@ -345,35 +346,100 @@ body{
 }
 
 
-footer{
-    height: 40vh;
-    /* background-color: #03A9F4; */
+footer {
+    height: 60vh;
     display: grid;
+    padding-bottom: 20px;
+}
+
+footer .content {
+    height: 40vh;
+    display: flex;
     place-items: center;
-    border-top: #003181 2px solid;
+    border-top: #003181 3px solid;
+    margin: 0 -160px;
+    border-radius: 50% 50% 0 0;
+    padding: 100px 320px 0;
+    justify-content: space-around;
 }
-
-footer h1{
-    font-size: 110px;
-    color: #003181;
+footer .content .name-address{
+    width: 35%;
+}
+footer .content .name-address .name h3{
+    margin: 0 50px;
+    font-size: 40px;
     font-weight: 600;
-}
-footer h1 span{
-    margin-left: 8px;
+    color: #0e47a1;
     font-family: 'Montserrat';
-    color: #cc1919;
+}
+footer .content .name-address .name h3 span{
+    color: #1fb0dc;
+    margin-left: 5px;
+    font-family: 'Montserrat';
 }
 
-footer .names{ color: #003181; font-weight: 600; }
-footer .names span{
-    color: #cc1919;
+footer .content .name-address .address p {
+    margin: 10px 50px;
+    font-size: 14px;
+    color: #0e47a1;
+    font-weight: 500;
+}
+footer .content .name-address .address p.para{
+    width: 82%;
+    font-size: 13px;
+    color: #606060;
+    font-weight: unset;
 }
 
+footer .content .social-media{
+    margin: 20px 50px;
+    display: grid;
+    gap: 10px;
+}
+footer .content .social-media a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #0e47a1;
+    padding: 8px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+footer .content .links {
+    display: grid;
+    height: 36%;
+    margin: 0 50px;
+}
+footer .content .links a{
+    text-decoration: none;
+    color: #003181;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+footer hr{
+    margin: 0 200px;
+    height: 0.8px;
+    border: none;
+    background-color: #8d8d8d;
+}
+
+footer p.copy{
+    margin: 20px 200px;
+    /* margin: 0 auto; */
+    padding: 0 0 20px 0;
+    font-size: 14px;
+    color: #434343;
+}
 
 /* Tablet */
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    body{
+        overflow: hidden;
+    }
 
     .homeBg {
         height: 100vh;
@@ -445,6 +511,15 @@ footer .names span{
     .employer-ad{ width: 90%; }
     .employer-ad img {
         width: 360px;
+    }
+
+
+    footer .content{
+        padding: 100px 140px 0;
+        justify-content: center;
+    }
+    footer hr{
+        margin: 0 36px;
     }
 }
 
@@ -537,6 +612,33 @@ footer .names span{
     }
     .employer-ad img {
         width: 360px;
+    }
+
+
+    footer .content{
+        height: fit-content;
+        display: grid;
+        padding: 100px 140px 0;
+        /* justify-content: center; */
+    }
+    footer .content .name-address{
+        width: 100%;
+    }
+    footer .content .links{
+        width: -webkit-fill-available;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    footer .content .social-media{
+        display: flex;
+        width: -webkit-fill-available;
+        margin: 40px 50px;
+    }
+    footer p.copy{
+        margin: 20px;
+    }
+    footer hr{
+        margin: 0;
     }
 
 }
